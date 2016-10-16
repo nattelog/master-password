@@ -50,4 +50,4 @@ $ "my-algorithm.js" added to list of custom algorithms
 
 ## Installation
 
-Install with [npm](www.npmjs.com): `npm install -g master-password`
+Install with [npm](https://www.npmjs.com): `npm install -g master-password`
