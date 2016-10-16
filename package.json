@@ -1,0 +1,26 @@
+{
+  "name": "master-password",
+  "version": "0.0.1",
+  "description": "Use a master password to generate unique passwords for other purposes",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nattelog/master-password.git"
+  },
+  "author": "Natanael Log <natte.log@gmail.com> (www.natanael.se)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nattelog/master-password/issues"
+  },
+  "homepage": "https://github.com/nattelog/master-password#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.7"
+  }
+}
