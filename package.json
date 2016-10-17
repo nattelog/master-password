@@ -10,7 +10,7 @@
     "prepublish": "npm run build"
   },
   "bin": {
-    "mspw": "dist/cli.js"
+    "mspw": "dist/lib/cli.js"
   },
   "babel": {
     "presets": ["es2015"]
