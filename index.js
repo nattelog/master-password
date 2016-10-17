@@ -1,1 +1,2 @@
-exports.wrapper = require('./lib/wrapper');
+export * from './lib/wrapper';
+export * from './lib/file';

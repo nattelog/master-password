@@ -2,9 +2,18 @@
   "name": "master-password",
   "version": "0.0.1",
   "description": "Use a master password to generate unique passwords for other purposes",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --compilers js:babel-register",
+    "start": "babel-node ./lib/cli.js",
+    "build": "rm -rf && babel lib -d dist/lib && babel index.js -o dist/index.js",
+    "prepublish": "npm run build"
+  },
+  "bin": {
+    "mspw": "dist/cli.js"
+  },
+  "babel": {
+    "presets": ["es2015"]
   },
   "repository": {
     "type": "git",
@@ -17,6 +26,9 @@
   },
   "homepage": "https://github.com/nattelog/master-password#readme",
   "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-register": "^6.16.3",
     "chai": "^3.5.0",
     "mocha": "^3.1.2"
   },
