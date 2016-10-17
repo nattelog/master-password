@@ -1,6 +1,6 @@
 {
   "name": "master-password",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use a master password to generate unique passwords for other purposes",
   "main": "dist/index.js",
   "scripts": {
@@ -13,7 +13,9 @@
     "mspw": "dist/lib/cli.js"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
   "repository": {
     "type": "git",
