@@ -10,7 +10,7 @@
     "prepublish": "npm run build"
   },
   "bin": {
-    "mspw": "dist/lib/cli.js"
+    "mspw": "bin/mspw"
   },
   "babel": {
     "presets": [
