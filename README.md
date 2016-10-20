@@ -51,3 +51,15 @@ $ "my-algorithm.js" added to list of custom algorithms
 ## Installation
 
 Install with [npm](https://www.npmjs.com): `npm install -g master-password`
+
+## Developing
+
+Use `npm link` inside the folder and npm will add the `mspw` command to the
+global path. Depending on npm's permission level on your machine you might have
+to `sudo`.
+
+* `npm run build` - Use this to compile the ES6 code and put it in `/dist`. This
+  must be done before the linked `mspw` command is updated as well.
+* `npm test` - Use to run tests. [Mocha](https://mochajs.org/) is used and all
+  features of it is included here. E.g. `npm test -- -w` will run tests
+  automatically on file changes.
