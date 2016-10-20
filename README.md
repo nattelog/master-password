@@ -52,11 +52,15 @@ $ "my-algorithm.js" added to list of custom algorithms
 
 Install with [npm](https://www.npmjs.com): `npm install -g master-password`
 
-## Developing
+## Developer
+
+Note, if you want to develop this application do **not** install the package via
+npm. Instead clone down this repo and continue from there.
 
 Use `npm link` inside the folder and npm will add the `mspw` command to the
 global path. Depending on npm's permission level on your machine you might have
-to `sudo`.
+to `sudo`. One way of solving weird npm-bugs is to remove the package globally
+and link it again: `npm remove master-password -g && npm link`.
 
 * `npm run build` - Use this to compile the ES6 code and put it in `/dist`. This
   must be done before the linked `mspw` command is updated as well.
